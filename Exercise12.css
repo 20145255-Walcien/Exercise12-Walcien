@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 20px;
+}
+#header {
+    float: left;
+    width: 100%;
+}
+#header img {
+    float: left;
+    width: 50%;
+    height: 600px;
+    padding: 5px;
+}
+#section1 {
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#section1 img {
+    float:left;
+    width: 100%;
+    height: 1080px;
+    padding: 5px;
+}
+#section2 {
+    clear: both;
+    width: 100%;
+    margin-bottom: 5px;
+}
+#section2 img {
+    clear: both;
+    width: 33%;
+    height: 480px;
+    padding: 5px;
+}
+#section3 {
+    width: 100%;
+}
+#section3 img {
+    float: left;
+    width: 25%;
+    padding: 5px;
+    height: 260px
+}
+
+@media only screen and (max-width:768px) {
+    #header img, #section2 img {
+        width: 100%;
+    }
+    #header img, #section2 img {
+        height: 260px;
+    }
+    #section1 img{
+        height: 720px;
+    }
+
+    #section3 img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    #section1 img {
+        height: 260px;
+    }
+    #section2 img {
+        height: 360px;
+    }
+    #section3 img {
+        width: 100%;
+        height: 120px;
+    }
+ }
